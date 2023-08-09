@@ -17,10 +17,9 @@ module.exports = (route) => {
       reject(new Error("La ruta no contiene archivos ni carpetas"));
     }
 
-    resolve(files.inspectFolder(filesFolder, newRoute));
+    const respuesta = files.inspectFolder(filesFolder, newRoute)
 
-
-    resolve(newRoute)
+    resolve(respuesta.toString());
   })
 };
 

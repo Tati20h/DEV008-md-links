@@ -180,6 +180,9 @@ El metodo para desarrollar el proyecto fue por medio de GitHub Projects, Issues 
 
 ### 5. Diagrama de flujo desarrollo de proyecto.
 
+![diagrama_01](https://github.com/Tati20h/DEV008-md-links/blob/main/img/Diagrama-de-flujo-1.png?raw=true)
+
+![diagrama_02](https://github.com/Tati20h/DEV008-md-links/blob/main/img/Diagrama-de-flijo-2.png?raw=true)
 
 ### 6. Checklist - Requisitos.
 

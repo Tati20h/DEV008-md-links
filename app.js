@@ -1,10 +1,14 @@
 const mdLinks = require('./index.js');
-
+const chalk = require('chalk');
+console.log(chalk.blue('Hello world!'));
 const route = process.argv[2];
+const isOptionValidate = process.argv.includes('--validate');
+const options = {
+    validate: isOptionValidate
+}
 
-
-mdLinks(route)
+mdLinks(route, options)
     .then(links => {
         console.log(links);
     })
-    .catch(console.error);
+    .catch(chalk.red(console.error));

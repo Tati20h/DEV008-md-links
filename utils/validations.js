@@ -16,11 +16,9 @@ const existPathVal = (route) => {
 const readMdVal = (routeFile) => {
     const allowedExtension = /(.md)$/i;
 
-    console.log(allowedExtension.exec(routeFile))
+    const routeDetail = allowedExtension.exec(routeFile)
 
-    const esto = allowedExtension.exec(routeFile)
-
-    return esto['input'];
+    return routeDetail ? true : false;
 }
 
 module.exports = {

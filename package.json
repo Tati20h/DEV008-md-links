@@ -4,6 +4,12 @@
   "engines": {
     "node": ">=16.x"
   },
+  "scripts": {
+    "test-module": "node app.js ./prueba --validate",
+    "test-val": "node app.js ./prueba --validate",
+    "test-stats": "node app.js ./prueba ./prueba --stats",
+    "eslint": "eslint --ext .js src/ test/"
+  },
   "bootcamp": {
     "createdAt": "2023-06-28T16:05:09.952Z",
     "version": "6.3.0",

@@ -15,9 +15,9 @@
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
-manejan texto plano como GitHub, foros u blogs, es muy común encontrar 
+manejan texto plano como GitHub, foros u blogs, es muy común encontrar
 varios archivos en ese formato en cualquier tipo de repositorio.
-La sintaxis de Markdown es muy simple y utiliza caracteres especiales para 
+La sintaxis de Markdown es muy simple y utiliza caracteres especiales para
 indicar diferentes elementos de formato.
 
 Estos archivos `Markdown` normalmente contienen _links_ (vínculos/ligas) que
@@ -28,29 +28,34 @@ archivos encontradados para verificar los links y crear reportes de estadisticas
 
 ## 2. Proyecto Markdown Links
 
-Este proyecto es una herramienta desarrollada como libreria que se ejecuta  medio dde una 
+Este proyecto es una herramienta desarrollada como libreria que se ejecuta  medio dde una
 línea de comando (CLI).
 
-Su objetivo principal es analizar los documentos `Markdown` encontrados dentro 
-de una ruta, ya sea de un archivo un directorio proporcionada por el usuario, 
-el analisis se basa en encontrar todos aquellos links dentro de el texto del 
+Su objetivo principal es analizar los documentos `Markdown` encontrados dentro
+de una ruta, ya sea de un archivo un directorio proporcionada por el usuario,
+el analisis se basa en encontrar todos aquellos links dentro de el texto del
 documento y lanzar estadisticas sobre la data encontrada:
 -_links_ En uso y validos.
 -_links_ Rotos o invalidos.
 -Cantidad de _links_ encontrados en los archivos.
 -Rutas de los documeentos pertenecientes a cada _links_.
 
-La finalidad es facilitar la obtencion de data de valor y no perjudica el 
+La finalidad es facilitar la obtencion de data de valor y no perjudica el
 valor de la información que se quiere compartir.
 
-Se contruyo un programa que se ejecute usando Node.js. [Node.js](https://nodejs.org/es/) 
-es un entorno de ejecución para JavaScriptconstruido con el 
+Se contruyo un programa que se ejecute usando Node.js. [Node.js](https://nodejs.org/es/)
+es un entorno de ejecución para JavaScriptconstruido con el
 [motor de JavaScript V8 de Chrome](https://developers.google.com/v8/).
 Esto nos va a permitir ejecutar JavaScript en el entorno del sistema operativo,
 ya sea tu máquina o un servidor.
 
 ## 1. Pasos para ejectutar la libreria (CLI/API). :computer:
-CLI (aplicación de línea de comandos).
+CLI (aplicación de línea de comandos).s
+
+#### CLI
+Deberas ejecutar el siguiente comando para ejecutarlo desde tu terminal:
+
+ `node app.js  [ "ruta-a-validar" ] --validate `
 
 #### Instalación.
 Dentro de tu terminal ejecuta el siguiente comando:
@@ -107,7 +112,7 @@ Si no encuentra ningun archivo se lanzara `error`.
 
 ## 2. Para ejecutar como API :desktop_computer:
 API (Interfaz de Programación de Aplicaciones).
-   
+
 #### Instalacion.
 
 Para iniciar comó una API:

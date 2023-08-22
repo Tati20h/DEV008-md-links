@@ -23,7 +23,7 @@ const inspectFolder = async (folder, route, valid) => {
       return resp;
     }
     return [];
-  } else if (statFs.isDirectory()) {
+  } if (statFs.isDirectory()) {
     const folderInterno = readFolder(route);
     for (const files of folderInterno) {
       const routeElement = path.join(route, files);
@@ -33,11 +33,9 @@ const inspectFolder = async (folder, route, valid) => {
     return resp;
   }
   return [];
-}
+};
 
-const readFolder = (route) => {
-  return fs.readdirSync(route);
-}
+const readFolder = (route) => fs.readdirSync(route);
 
 const searchUrl = async (file, route, valid) => {
   const regex = /<a\s+(.*?)>(.*?)<\/a>/g;
@@ -63,18 +61,18 @@ const searchUrl = async (file, route, valid) => {
         urlInfo.ok = 'fail';
       }
     } else {
-      urlInfo['href'] = url;
-      urlInfo['text'] = validUrl[2];
-      urlInfo['file'] = route;
+      urlInfo.href = url;
+      urlInfo.text = validUrl[2];
+      urlInfo.file = route;
     }
 
     jsonUrl.push(urlInfo);
   }
 
   return jsonUrl;
-}
+};
 
 module.exports = {
   readFolder,
   inspectFolder,
-}
+};

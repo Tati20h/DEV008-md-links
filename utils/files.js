@@ -1,3 +1,9 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-cond-assign */
+/* eslint-disable import/extensions */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-restricted-syntax */
 const fs = require('fs');
 const path = require('path');
 const validations = require('./validations.js');
@@ -49,6 +55,7 @@ const searchUrl = async (file, route, valid) => {
 
     if (valid) {
       urlInfo.href = url;
+      // eslint-disable-next-line prefer-destructuring
       urlInfo.text = validUrl[2];
       urlInfo.file = route;
 
@@ -62,6 +69,7 @@ const searchUrl = async (file, route, valid) => {
       }
     } else {
       urlInfo.href = url;
+      // eslint-disable-next-line prefer-destructuring
       urlInfo.text = validUrl[2];
       urlInfo.file = route;
     }

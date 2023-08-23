@@ -1,7 +1,8 @@
-const mdLinks = require('..');
+/* eslint-disable no-undef */
+const mdLinks = require('../index');
 
 describe('mdLinks', () => {
-  it('should....', () => {
-    console.log('FIX ME!');
+  it('verificamos que sea funcion', () => {
+    expect(typeof mdLinks).toBe('function');
   });
 });

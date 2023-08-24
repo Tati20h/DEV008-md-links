@@ -11,6 +11,12 @@ const options = {
 
 mdLinks(route, options)
   .then((links) => {
-    console.log(links);
+    if (typeof (links) === 'string') {
+      console.log(chalk.yellow(links));
+    } else {
+      console.log(links);
+    }
   })
-  .catch(chalk.red(console.error));
+  .catch((error) => {
+    console.log(chalk.red(error.message));
+  });

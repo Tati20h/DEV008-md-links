@@ -5,7 +5,7 @@
     "node": ">=16.x"
   },
   "scripts": {
-    "test-module": "node app.js ./prueba --validate",
+    "test-module": "node app.js ./prueba",
     "test-val": "node app.js ./prueba --validate",
     "test-stats": "node app.js ./prueba ./prueba --stats",
     "eslint": "eslint --ext .js utils/ test/",

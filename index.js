@@ -1,3 +1,5 @@
+/* eslint-disable no-async-promise-executor */
+/* eslint-disable import/extensions */
 const validations = require('./utils/validations.js');
 const files = require('./utils/files.js');
 
@@ -20,7 +22,7 @@ module.exports = (route, options) => new Promise(async (resolve, reject) => {
 
   const okResp = [];
   response.forEach((e) => {
-    if (e.ok == 'fail') {
+    if (e.ok === 'fail') {
       okResp.push(e);
     }
   });

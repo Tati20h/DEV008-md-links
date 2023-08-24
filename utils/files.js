@@ -83,4 +83,5 @@ const searchUrl = async (file, route, valid) => {
 module.exports = {
   readFolder,
   inspectFolder,
+  searchUrl,
 };

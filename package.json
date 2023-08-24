@@ -25,5 +25,20 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
     "jest": "^29.6.3"
-  }
+  },
+  "description": "## Índice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tati20h/DEV008-md-links.git"
+  },
+  "author": "tatiana hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tati20h/DEV008-md-links/issues"
+  },
+  "homepage": "https://github.com/Tati20h/DEV008-md-links#readme"
 }

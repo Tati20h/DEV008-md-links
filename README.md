@@ -1,5 +1,6 @@
 <div align="center">
-    <a href="https://www.npmjs.com/package/tatii-md-links"> <h2>📚 tatii-md-links 🔍 </h2></a>
+    <a 
+      href="https://www.npmjs.com/package/tatii-md-links"> 📚 tatii-md-links </a>
 
 
  ![Image text](./img/icongithub.png)
@@ -147,7 +148,7 @@ Resultados de pruebas realizadas a las funciones puras.
 ## 5. Metodo planificacion y Scrum.
 El metodo para desarrollar el proyecto fue por medio de GitHub Projects, Issues y Milestones.
 
-<a href="https://github.com/users/Tati20h/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Linked+pull+requests%22%2C%22Reviewers%22%2C%22Repository%22%2C%22Milestone%22%5D&layout=table"> <h2> 📝GitHub Projects🧾  </h2></a>
+<a href="https://github.com/users/Tati20h/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Linked+pull+requests%22%2C%22Reviewers%22%2C%22Repository%22%2C%22Milestone%22%5D&layout=table">  📝GitHub Projects🧾 </a>
 
 
 

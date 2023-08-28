@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://www.npmjs.com/package/tatii-md-links"> <h1>📚 tatii-md-links 🔍 </h1></a>
+    <a href="https://www.npmjs.com/package/tatii-md-links"> <h2>📚 tatii-md-links 🔍 </h2></a>
 
 
  ![Image text](./img/icongithub.png)
@@ -21,6 +21,7 @@
 
 ***
 
+<div align="justify">
 ## 1. Introducción
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado ligero muy popular entre developers; ampliamente utilizado en plataformas de blogging, sitios web documentación y otros contextos en línea, ya que permite a los usuarios crear contenido con un formato coherente sin la necesidad de conocimientos profundos de estos . Además, muchas herramientas y plataformas admiten Markdown, lo que facilita su integración en diversos flujos de trabajo.
@@ -32,7 +33,7 @@ herramienta usando [Node.js](https://nodejs.org/), la cual analizara los
 archivos encontradados para verificar los links y crear reportes de estadisticas.
 
 
-### 2. Proyecto Markdown Links
+## 2. Proyecto Markdown Links
 Este proyecto es una herramienta o aplicación diseñada para analizar y gestionar los enlaces dentro de documentos escritos en formato Markdown.
 El propósito principal de este proyecto sería permitir a los usuarios identificar de manera eficiente los enlaces presentes en sus archivos Markdown y verificar su validez. ejecuta por medio  una línea de comando (CLI).
 
@@ -49,15 +50,15 @@ El proyecto podría generar informes detallados que muestren una lista de enlace
 
 
 
-## 1. Pasos para ejectutar la libreria (CLI/API). :computer:
+## 1. Pasos para ejectutar la libreria (CLI/API). 💻
 CLI (aplicación de línea de comandos)
 
-### Instalación.
+### Instalación.⬇️
 Dentro de tu terminal ejecuta el siguiente comando:
 
   `npm i tatii-md-links`
 
-#### Inicar la libreria.
+#### Inicar la libreria.📚
 Luego de instalar la libreria , sera necesario proporcionar los datos en la terminal de la siguiente forma:
 
 `npm run test-module <path> <options>`
@@ -70,47 +71,47 @@ Luego de instalar la libreria , sera necesario proporcionar los datos en la term
 
 ### Ingresos de opciones y resultados esperados.
 
-1. `npm run test-module <path>`
+ ### 1. `npm run test-module <path>`
 Al ejecutar esta opción donde solo se proporciona la ruta la libreria solo enlistara los links encontrados.
 
-![existe](./img/path.png)
+![existe](./img/path.png)✅
 
 En caso de no encontrar ruta o no ser proporcionada conrrectamente lanzara error u ruta no encontrada.
 
-![Esta ruta no existe](./img/path_Error.png)
+![Esta ruta no existe](./img/path_Error.png)❌
 
 
-2. `npm run test-module <path> -- --validate`
+### 2. `npm run test-module <path> -- --validate`
 Al ejecutar esta opción el modulo hara una petición HTTP mostrando si los links encontrados funcionan o no.
 Si el link resulta en una redirección a una URL que responde ok, entonces consideraremos el link como funcional.
 
-![Existe](./img/path-validate.png)
+![Existe](./img/path-validate.png)📚✅
 
 Si el link resulta en una redirección a una URL que responde fail, entonces consideraremos el link como roto.
 Si no encuentra ningun archivo se lanzara `error`.
 
-![La ruta no contiene archivos ni carpetas](./img/patsh-validate-Error.png)
+![La ruta no contiene archivos ni carpetas](./img/patsh-validate-Error.png)❌
 
 
-3. `npm run test-module <path> -- --stats`
+### 3. `npm run test-module <path> -- --stats`
 Al ejecutar esta opción el output (salida) será un texto con estadísticas básicas sobre los links, donde se mostrara
 la cantidad de links encontrados y no repetidos.
 Si no encuentra ningun archivo se lanzara `error`.
 
-![stats](./img/stats.png)
+![stats](./img/stats.png)📊
 
 
-4. `npm run test-module <path> -- --validate --stats`
+### 4. `npm run test-module <path> -- --validate --stats`
 Al ejecutar esta opción el output (salida) será un texto con estadísticas básicas sobre los links, donde se mostrara
 la cantidad de links encontrados y no repetidos, ademas de analizar la cantidad de links rotos u no funcionales.
 Si no encuentra ningun archivo se lanzara `error`.
 
 ![stats-val](./img/stats%3Dvalidate.png)
 
-## 2. Para ejecutar como API :desktop_computer:
+## 2. Para ejecutar como API :
 API (Interfaz de Programación de Aplicaciones).
 
-#### Instalacion.
+### Instalacion.
 
 Para iniciar comó una API:
 
@@ -122,7 +123,7 @@ Para iniciar comó una API:
 
 Finalizados los pasos puede comenzar a ejecutar la libreria en su terminal.
 
-#### Inicar la libreria.
+### Inicar la libreria.
 Cuando se tenga la libreria instalada sera necesario proporcionar los datos en la terminal de la siguiente forma:
 
 `npm run test-module <path> [options]`
@@ -133,13 +134,23 @@ Cuando se tenga la libreria instalada sera necesario proporcionar los datos en l
 
 - En caso de se una ruta no encontrada o la ruta no fue proporcionada correctamente lanzara `error`.
 
-### 4. Pruebas unitarias JEST.
+## 4. Pruebas unitarias JEST.
 Resultados de pruebas realizadas a las funciones puras.
 
-![jest]
+* [ :chart:] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
+  lines, y branches.
+* [ :chart:] Pasa tests (y linters) (`npm run test`).
+![test](./img/tests-coverage.png)
 
-### 5. Metodo planificacion y Scrum.
+ </div>
+
+## 5. Metodo planificacion y Scrum.
 El metodo para desarrollar el proyecto fue por medio de GitHub Projects, Issues y Milestones.
+
+<a href="https://github.com/users/Tati20h/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%2C%22Linked+pull+requests%22%2C%22Reviewers%22%2C%22Repository%22%2C%22Milestone%22%5D&layout=table"> <h2> 📝GitHub Projects🧾  </h2></a>
+
+
+
 
 ### Diagrama de flujo desarrollo de proyecto.
 
@@ -163,9 +174,4 @@ El metodo para desarrollar el proyecto fue por medio de GitHub Projects, Issues 
 * [ :chart:] Implementa `--validate`
 * [ :chart:] Implementa `--stats`
 
-### Pruebas / tests
-
-* [ :chart:] Pruebas unitarias cubren un mínimo del 70% de statements, functions,
-  lines, y branches.
-* [ :chart:] Pasa tests (y linters) (`npm run test`).
-![test](./img/tests-coverage.png)
+ </div>

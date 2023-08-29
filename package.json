@@ -6,6 +6,7 @@
   },
   "scripts": {
     "test-module": "node app.js",
+    "test-modulep": "node lib.js",
     "eslint": "eslint --ext .js utils/ test/",
     "test": "jest --coverage"
   },
@@ -16,7 +17,8 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "tatii-md-links": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^8.47.0",

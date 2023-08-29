@@ -17,7 +17,7 @@ const inspectFolder = async (folder, route, valid) => {
   if (folder.length <= 0) {
     return [];
   }
-
+  // hastas que encuentra archivo md retorna respuesta recursiva no sea infinita .
   if (statFs.isFile()) {
     const md = validations.readMdVal(route);
     if (md) {
